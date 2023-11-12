@@ -36,13 +36,7 @@ struct LocationPicker: View {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.white)
             }
-            .padding()
-            
-            HStack {
-                UITextField            }
-            .padding()
-            
-            
+            .padding()            
             Spacer()
             
         }
