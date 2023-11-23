@@ -12,7 +12,16 @@ extension Color {
 }
 
 struct LocationPicker: View {
+    @EnvironmentObject var locationData: MarkerData
     @State private var searchText: String = ""
+    
+    var filteredLocations: [Marker] {
+        if searchText.isEmpty {
+            return locationData.markers
+        } else {
+            return locationData.markers.filter{$0.name.lowercased().contains(searchText.lowercased())}
+        }
+    }
     var body: some View {
         VStack {
             HStack {
@@ -39,6 +48,10 @@ struct LocationPicker: View {
             .padding()            
             Spacer()
             
+            List(filteredLocations, id: \.self) {location in
+                    LocationRow(location: location)
+            }
+            
         }
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
         .background() {
@@ -48,5 +61,5 @@ struct LocationPicker: View {
 }
 
 #Preview {
-    LocationPicker()
+    LocationPicker().environmentObject(MarkerData())
 }

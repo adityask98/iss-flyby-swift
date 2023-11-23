@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct LocationRow: View {
-    var locationName: String
+    var location: Marker
     var body: some View {
         HStack {
             Image(systemName: "mappin").foregroundStyle(Color(.white))
-            Text(locationName)
+            Text(location.name)
                 .foregroundStyle(Color(.white))
             Spacer()
             
@@ -23,5 +23,5 @@ struct LocationRow: View {
 }
 
 #Preview {
-    LocationRow(locationName: "San Francisco")
+    LocationRow(location: MarkerData().markers[0])
 }
