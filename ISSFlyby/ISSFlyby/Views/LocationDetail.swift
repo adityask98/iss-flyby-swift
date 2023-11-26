@@ -35,14 +35,16 @@ struct LocationDetail: View {
 //            }
             if !flybyData.fetchedItems.isEmpty {
                 List(flybyData.fetchedItems, id: \.self) { item in
-                    Text(item.description.date)
+                    ItemRow(date: item.description.date, time: item.description.time, duration: item.description.duration)
+                        .listRowBackground(Color("darkPrimaryColor"))
                 }
-                .listStyle(PlainListStyle())
+               
+                .listStyle(.plain)
                 
             } else {
                 Text("Loading")
                 Spacer()
-                            }
+            }
         }
             .onAppear {
                 region = Binding.constant(MKCoordinateRegion(center: .init(latitude: location.latitude, longitude: location.longitude), span: .init(latitudeDelta: 0.2, longitudeDelta: 0.2)))
