@@ -18,6 +18,9 @@
 		484C8DA22B00B9C8007C21E6 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C8DA12B00B9C8007C21E6 /* ColorManager.swift */; };
 		487397352B1314AA00758D3A /* LocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487397342B1314AA00758D3A /* LocationDetail.swift */; };
 		487397382B132F0400758D3A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 487397372B132F0400758D3A /* Alamofire */; };
+		4873973B2B13345200758D3A /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 4873973A2B13345200758D3A /* SWXMLHash */; };
+		4873973D2B13363A00758D3A /* GetFlybyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4873973C2B13363A00758D3A /* GetFlybyData.swift */; };
+		4873973F2B1336A700758D3A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4873973E2B1336A700758D3A /* Item.swift */; };
 		48D2C1472B0F527C000530A1 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D2C1462B0F527B000530A1 /* Marker.swift */; };
 		48D2C1492B0F5439000530A1 /* MarkerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D2C1482B0F5439000530A1 /* MarkerData.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +38,8 @@
 		484C8D9E2B00B87A007C21E6 /* LocationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPicker.swift; sourceTree = "<group>"; };
 		484C8DA12B00B9C8007C21E6 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		487397342B1314AA00758D3A /* LocationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetail.swift; sourceTree = "<group>"; };
+		4873973C2B13363A00758D3A /* GetFlybyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFlybyData.swift; sourceTree = "<group>"; };
+		4873973E2B1336A700758D3A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		48D2C1462B0F527B000530A1 /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
 		48D2C1482B0F5439000530A1 /* MarkerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4873973B2B13345200758D3A /* SWXMLHash in Frameworks */,
 				487397382B132F0400758D3A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +89,7 @@
 				484C8D8F2B00B7DD007C21E6 /* ISSFlybyApp.swift */,
 				484C8D912B00B7DD007C21E6 /* ContentView.swift */,
 				484C8D9E2B00B87A007C21E6 /* LocationPicker.swift */,
+				4873973C2B13363A00758D3A /* GetFlybyData.swift */,
 				4811572D2B00D682004BA14A /* LocationRow.swift */,
 				487397342B1314AA00758D3A /* LocationDetail.swift */,
 				484C8D932B00B7DE007C21E6 /* Assets.xcassets */,
@@ -114,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				48D2C1462B0F527B000530A1 /* Marker.swift */,
+				4873973E2B1336A700758D3A /* Item.swift */,
 				48D2C1482B0F5439000530A1 /* MarkerData.swift */,
 			);
 			path = Model;
@@ -137,6 +145,7 @@
 			name = ISSFlyby;
 			packageProductDependencies = (
 				487397372B132F0400758D3A /* Alamofire */,
+				4873973A2B13345200758D3A /* SWXMLHash */,
 			);
 			productName = ISSFlyby;
 			productReference = 484C8D8C2B00B7DD007C21E6 /* ISSFlyby.app */;
@@ -168,6 +177,7 @@
 			mainGroup = 484C8D832B00B7DD007C21E6;
 			packageReferences = (
 				487397362B132F0400758D3A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				487397392B13345200758D3A /* XCRemoteSwiftPackageReference "SWXMLHash" */,
 			);
 			productRefGroup = 484C8D8D2B00B7DD007C21E6 /* Products */;
 			projectDirPath = "";
@@ -200,8 +210,10 @@
 				48D2C1492B0F5439000530A1 /* MarkerData.swift in Sources */,
 				484C8D922B00B7DD007C21E6 /* ContentView.swift in Sources */,
 				484C8DA22B00B9C8007C21E6 /* ColorManager.swift in Sources */,
+				4873973F2B1336A700758D3A /* Item.swift in Sources */,
 				487397352B1314AA00758D3A /* LocationDetail.swift in Sources */,
 				4811572E2B00D682004BA14A /* LocationRow.swift in Sources */,
+				4873973D2B13363A00758D3A /* GetFlybyData.swift in Sources */,
 				484C8D902B00B7DD007C21E6 /* ISSFlybyApp.swift in Sources */,
 				484C8D9F2B00B87A007C21E6 /* LocationPicker.swift in Sources */,
 				48D2C1472B0F527C000530A1 /* Marker.swift in Sources */,
@@ -421,6 +433,14 @@
 				minimumVersion = 5.8.1;
 			};
 		};
+		487397392B13345200758D3A /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/drmohundro/SWXMLHash.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -428,6 +448,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 487397362B132F0400758D3A /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		4873973A2B13345200758D3A /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 487397392B13345200758D3A /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -10,34 +10,54 @@ import MapKit
 
 struct LocationDetail: View {
     @EnvironmentObject var locationData: MarkerData
+    @ObservedObject private var flybyData = GetFlybyData()
     var location: Marker
+    
     
     @State private var region: Binding<MKCoordinateRegion>?
     
     var body: some View {
-        ScrollView{
-            VStack{
-                if let region = region {
-                    Map(coordinateRegion: region)
-                        .frame(height: 200)
-                }
-                Text(location.name)
-                    .frame(maxWidth: .infinity, alignment: .center )
-                    .padding()
-                    .foregroundStyle(Color("accentText"))
-                    .background(RoundedRectangle(cornerRadius: 10).fill(Color("darkPrimaryColor")))
-               
+        VStack{
+            if let region = region {
+                Map(coordinateRegion: region)
+                    .ignoresSafeArea(edges: .top)
+                    .frame(height: 200)
             }
+            Text(location.name)
+                .frame(maxWidth: .infinity, alignment: .center )
+                .padding()
+                
+                .foregroundStyle(Color("accentText"))
+                .background(RoundedRectangle(cornerRadius: 10).fill(Color("darkPrimaryColor")))
+            Spacer()
+//            Button("FETCH"){
+//                flybyData.fetchData(country: location.country, region: location.additional_info, city: location.city_identifier)
+//            }
+            if !flybyData.fetchedItems.isEmpty {
+                List(flybyData.fetchedItems, id: \.self) { item in
+                    Text(item.description.date)
+                }
+                .listStyle(PlainListStyle())
+                
+            } else {
+                Text("Loading")
+                Spacer()
+                            }
+        }
             .onAppear {
                 region = Binding.constant(MKCoordinateRegion(center: .init(latitude: location.latitude, longitude: location.longitude), span: .init(latitudeDelta: 0.2, longitudeDelta: 0.2)))
-                        }
-        }
+                flybyData.fetchData(country: location.country, region: location.additional_info, city: location.city_identifier)
+            }
+        
         .navigationTitle(location.name)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(Color("primaryColor"), for: .navigationBar)
+        .ignoresSafeArea(edges: .top)
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
         .background() {
             Color("primaryColor").ignoresSafeArea()
         }
-      
+        
     }
     
     
