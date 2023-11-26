@@ -32,12 +32,14 @@ struct LocationDetail: View {
                 region = Binding.constant(MKCoordinateRegion(center: .init(latitude: location.latitude, longitude: location.longitude), span: .init(latitudeDelta: 0.2, longitudeDelta: 0.2)))
                         }
         }
+        .navigationTitle(location.name)
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
         .background() {
             Color("primaryColor").ignoresSafeArea()
         }
       
     }
+    
     
 }
 
