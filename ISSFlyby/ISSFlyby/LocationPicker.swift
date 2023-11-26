@@ -23,6 +23,7 @@ struct LocationPicker: View {
         }
     }
     var body: some View {
+        NavigationView{
         VStack {
             HStack {
                 Text("Select your location to continue")
@@ -45,19 +46,25 @@ struct LocationPicker: View {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.white)
             }
-            .padding()            
+            .padding()
             Spacer()
             
-            List(filteredLocations, id: \.self) {location in
+            
+            List(filteredLocations, id: \.self) { location in
+                NavigationLink(destination: LocationDetail(location: location)) {
                     LocationRow(location: location)
+                } 
+                .listRowBackground(Color("darkPrimaryColor"))
             }
+            .listStyle(.plain)
+            
             
         }
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
         .background() {
             Color("primaryColor").ignoresSafeArea()
         }
-    }
+    }}
 }
 
 #Preview {

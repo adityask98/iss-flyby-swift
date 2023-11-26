@@ -16,6 +16,7 @@
 		484C8D972B00B7DE007C21E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484C8D962B00B7DE007C21E6 /* Preview Assets.xcassets */; };
 		484C8D9F2B00B87A007C21E6 /* LocationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C8D9E2B00B87A007C21E6 /* LocationPicker.swift */; };
 		484C8DA22B00B9C8007C21E6 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C8DA12B00B9C8007C21E6 /* ColorManager.swift */; };
+		487397352B1314AA00758D3A /* LocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487397342B1314AA00758D3A /* LocationDetail.swift */; };
 		48D2C1472B0F527C000530A1 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D2C1462B0F527B000530A1 /* Marker.swift */; };
 		48D2C1492B0F5439000530A1 /* MarkerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D2C1482B0F5439000530A1 /* MarkerData.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		484C8D982B00B7DE007C21E6 /* ISSFlyby.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ISSFlyby.entitlements; sourceTree = "<group>"; };
 		484C8D9E2B00B87A007C21E6 /* LocationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPicker.swift; sourceTree = "<group>"; };
 		484C8DA12B00B9C8007C21E6 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		487397342B1314AA00758D3A /* LocationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetail.swift; sourceTree = "<group>"; };
 		48D2C1462B0F527B000530A1 /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
 		48D2C1482B0F5439000530A1 /* MarkerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 				484C8D912B00B7DD007C21E6 /* ContentView.swift */,
 				484C8D9E2B00B87A007C21E6 /* LocationPicker.swift */,
 				4811572D2B00D682004BA14A /* LocationRow.swift */,
+				487397342B1314AA00758D3A /* LocationDetail.swift */,
 				484C8D932B00B7DE007C21E6 /* Assets.xcassets */,
 				481157322B00DB3B004BA14A /* Resources */,
 				484C8D982B00B7DE007C21E6 /* ISSFlyby.entitlements */,
@@ -189,6 +192,7 @@
 				48D2C1492B0F5439000530A1 /* MarkerData.swift in Sources */,
 				484C8D922B00B7DD007C21E6 /* ContentView.swift in Sources */,
 				484C8DA22B00B9C8007C21E6 /* ColorManager.swift in Sources */,
+				487397352B1314AA00758D3A /* LocationDetail.swift in Sources */,
 				4811572E2B00D682004BA14A /* LocationRow.swift in Sources */,
 				484C8D902B00B7DD007C21E6 /* ISSFlybyApp.swift in Sources */,
 				484C8D9F2B00B87A007C21E6 /* LocationPicker.swift in Sources */,
