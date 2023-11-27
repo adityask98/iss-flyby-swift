@@ -29,7 +29,7 @@ struct LocationDetail: View {
                 
                 .foregroundStyle(Color("accentText"))
                 .background(RoundedRectangle(cornerRadius: 10).fill(Color("darkPrimaryColor")))
-            Spacer()
+            
 //            Button("FETCH"){
 //                flybyData.fetchData(country: location.country, region: location.additional_info, city: location.city_identifier)
 //            }
@@ -42,13 +42,15 @@ struct LocationDetail: View {
                 .listStyle(.plain)
                 
             } else {
-                Text("Loading")
+                ProgressView()
+                    .tint(Color("accentText"))
                 Spacer()
             }
         }
             .onAppear {
                 region = Binding.constant(MKCoordinateRegion(center: .init(latitude: location.latitude, longitude: location.longitude), span: .init(latitudeDelta: 0.2, longitudeDelta: 0.2)))
                 flybyData.fetchData(country: location.country, region: location.additional_info, city: location.city_identifier)
+                UIApplication.shared.windows.first?.rootViewController?.overrideUserInterfaceStyle = .dark
             }
         
         .navigationTitle(location.name)
