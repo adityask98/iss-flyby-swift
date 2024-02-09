@@ -16,12 +16,52 @@
 		484C8D972B00B7DE007C21E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484C8D962B00B7DE007C21E6 /* Preview Assets.xcassets */; };
 		484C8D9F2B00B87A007C21E6 /* LocationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C8D9E2B00B87A007C21E6 /* LocationPicker.swift */; };
 		484C8DA22B00B9C8007C21E6 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C8DA12B00B9C8007C21E6 /* ColorManager.swift */; };
+		486A38282B6BAFCA00D777C5 /* CorePermissionsSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38272B6BAFCA00D777C5 /* CorePermissionsSwiftUI */; };
+		486A382A2B6BAFCA00D777C5 /* PermissionsSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38292B6BAFCA00D777C5 /* PermissionsSwiftUI */; };
+		486A382C2B6BAFCA00D777C5 /* PermissionsSwiftUIBiometrics in Frameworks */ = {isa = PBXBuildFile; productRef = 486A382B2B6BAFCA00D777C5 /* PermissionsSwiftUIBiometrics */; };
+		486A382E2B6BAFCA00D777C5 /* PermissionsSwiftUIBluetooth in Frameworks */ = {isa = PBXBuildFile; productRef = 486A382D2B6BAFCA00D777C5 /* PermissionsSwiftUIBluetooth */; };
+		486A38302B6BAFCA00D777C5 /* PermissionsSwiftUICalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 486A382F2B6BAFCA00D777C5 /* PermissionsSwiftUICalendar */; };
+		486A38322B6BAFCA00D777C5 /* PermissionsSwiftUICamera in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38312B6BAFCA00D777C5 /* PermissionsSwiftUICamera */; };
+		486A38342B6BAFCA00D777C5 /* PermissionsSwiftUIContacts in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38332B6BAFCA00D777C5 /* PermissionsSwiftUIContacts */; };
+		486A38362B6BAFCA00D777C5 /* PermissionsSwiftUIHealth in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38352B6BAFCA00D777C5 /* PermissionsSwiftUIHealth */; };
+		486A38382B6BAFCA00D777C5 /* PermissionsSwiftUILocation in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38372B6BAFCA00D777C5 /* PermissionsSwiftUILocation */; };
+		486A383A2B6BAFCA00D777C5 /* PermissionsSwiftUILocationAlways in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38392B6BAFCA00D777C5 /* PermissionsSwiftUILocationAlways */; };
+		486A383C2B6BAFCA00D777C5 /* PermissionsSwiftUIMicrophone in Frameworks */ = {isa = PBXBuildFile; productRef = 486A383B2B6BAFCA00D777C5 /* PermissionsSwiftUIMicrophone */; };
+		486A383E2B6BAFCA00D777C5 /* PermissionsSwiftUIMotion in Frameworks */ = {isa = PBXBuildFile; productRef = 486A383D2B6BAFCA00D777C5 /* PermissionsSwiftUIMotion */; };
+		486A38402B6BAFCA00D777C5 /* PermissionsSwiftUIMusic in Frameworks */ = {isa = PBXBuildFile; productRef = 486A383F2B6BAFCA00D777C5 /* PermissionsSwiftUIMusic */; };
+		486A38422B6BAFCA00D777C5 /* PermissionsSwiftUINotification in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38412B6BAFCA00D777C5 /* PermissionsSwiftUINotification */; };
+		486A38442B6BAFCA00D777C5 /* PermissionsSwiftUIPhoto in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38432B6BAFCA00D777C5 /* PermissionsSwiftUIPhoto */; };
+		486A38462B6BAFCA00D777C5 /* PermissionsSwiftUIReminder in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38452B6BAFCA00D777C5 /* PermissionsSwiftUIReminder */; };
+		486A38482B6BAFCA00D777C5 /* PermissionsSwiftUISiri in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38472B6BAFCA00D777C5 /* PermissionsSwiftUISiri */; };
+		486A384A2B6BAFCA00D777C5 /* PermissionsSwiftUISpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38492B6BAFCA00D777C5 /* PermissionsSwiftUISpeech */; };
+		486A384C2B6BB00800D777C5 /* CorePermissionsSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 486A384B2B6BB00800D777C5 /* CorePermissionsSwiftUI */; };
+		486A384E2B6BB00800D777C5 /* PermissionsSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 486A384D2B6BB00800D777C5 /* PermissionsSwiftUI */; };
+		486A38502B6BB00800D777C5 /* PermissionsSwiftUIBiometrics in Frameworks */ = {isa = PBXBuildFile; productRef = 486A384F2B6BB00800D777C5 /* PermissionsSwiftUIBiometrics */; };
+		486A38522B6BB00800D777C5 /* PermissionsSwiftUIBluetooth in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38512B6BB00800D777C5 /* PermissionsSwiftUIBluetooth */; };
+		486A38542B6BB00800D777C5 /* PermissionsSwiftUICalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38532B6BB00800D777C5 /* PermissionsSwiftUICalendar */; };
+		486A38562B6BB00800D777C5 /* PermissionsSwiftUICamera in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38552B6BB00800D777C5 /* PermissionsSwiftUICamera */; };
+		486A38582B6BB00800D777C5 /* PermissionsSwiftUIContacts in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38572B6BB00800D777C5 /* PermissionsSwiftUIContacts */; };
+		486A385A2B6BB00800D777C5 /* PermissionsSwiftUIHealth in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38592B6BB00800D777C5 /* PermissionsSwiftUIHealth */; };
+		486A385C2B6BB00800D777C5 /* PermissionsSwiftUILocation in Frameworks */ = {isa = PBXBuildFile; productRef = 486A385B2B6BB00800D777C5 /* PermissionsSwiftUILocation */; };
+		486A385E2B6BB00800D777C5 /* PermissionsSwiftUILocationAlways in Frameworks */ = {isa = PBXBuildFile; productRef = 486A385D2B6BB00800D777C5 /* PermissionsSwiftUILocationAlways */; };
+		486A38602B6BB00800D777C5 /* PermissionsSwiftUIMicrophone in Frameworks */ = {isa = PBXBuildFile; productRef = 486A385F2B6BB00800D777C5 /* PermissionsSwiftUIMicrophone */; };
+		486A38622B6BB00800D777C5 /* PermissionsSwiftUIMotion in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38612B6BB00800D777C5 /* PermissionsSwiftUIMotion */; };
+		486A38642B6BB00800D777C5 /* PermissionsSwiftUIMusic in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38632B6BB00800D777C5 /* PermissionsSwiftUIMusic */; };
+		486A38662B6BB00800D777C5 /* PermissionsSwiftUINotification in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38652B6BB00800D777C5 /* PermissionsSwiftUINotification */; };
+		486A38682B6BB00800D777C5 /* PermissionsSwiftUIPhoto in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38672B6BB00800D777C5 /* PermissionsSwiftUIPhoto */; };
+		486A386A2B6BB00800D777C5 /* PermissionsSwiftUIReminder in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38692B6BB00800D777C5 /* PermissionsSwiftUIReminder */; };
+		486A386C2B6BB00800D777C5 /* PermissionsSwiftUISiri in Frameworks */ = {isa = PBXBuildFile; productRef = 486A386B2B6BB00800D777C5 /* PermissionsSwiftUISiri */; };
+		486A386E2B6BB00800D777C5 /* PermissionsSwiftUISpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 486A386D2B6BB00800D777C5 /* PermissionsSwiftUISpeech */; };
+		486A38702B6BB00800D777C5 /* PermissionsSwiftUITracking in Frameworks */ = {isa = PBXBuildFile; productRef = 486A386F2B6BB00800D777C5 /* PermissionsSwiftUITracking */; };
+		486A38732B6BB4DF00D777C5 /* Locations in Frameworks */ = {isa = PBXBuildFile; productRef = 486A38722B6BB4DF00D777C5 /* Locations */; };
 		487397352B1314AA00758D3A /* LocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487397342B1314AA00758D3A /* LocationDetail.swift */; };
 		487397382B132F0400758D3A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 487397372B132F0400758D3A /* Alamofire */; };
 		4873973B2B13345200758D3A /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 4873973A2B13345200758D3A /* SWXMLHash */; };
 		4873973D2B13363A00758D3A /* GetFlybyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4873973C2B13363A00758D3A /* GetFlybyData.swift */; };
 		4873973F2B1336A700758D3A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4873973E2B1336A700758D3A /* Item.swift */; };
 		487397452B136E0800758D3A /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487397442B136E0800758D3A /* ItemRow.swift */; };
+		488EA3492B72163A00D8D881 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488EA3482B72163A00D8D881 /* LocationManager.swift */; };
+		488EA34C2B72228200D8D881 /* PlaceNameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488EA34B2B72228200D8D881 /* PlaceNameManager.swift */; };
 		48D2C1472B0F527C000530A1 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D2C1462B0F527B000530A1 /* Marker.swift */; };
 		48D2C1492B0F5439000530A1 /* MarkerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D2C1482B0F5439000530A1 /* MarkerData.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +83,8 @@
 		4873973E2B1336A700758D3A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		487397432B136D9C00758D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		487397442B136E0800758D3A /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		488EA3482B72163A00D8D881 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		488EA34B2B72228200D8D881 /* PlaceNameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceNameManager.swift; sourceTree = "<group>"; };
 		48D2C1462B0F527B000530A1 /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
 		48D2C1482B0F5439000530A1 /* MarkerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,8 +94,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				486A38442B6BAFCA00D777C5 /* PermissionsSwiftUIPhoto in Frameworks */,
+				486A38322B6BAFCA00D777C5 /* PermissionsSwiftUICamera in Frameworks */,
+				486A382C2B6BAFCA00D777C5 /* PermissionsSwiftUIBiometrics in Frameworks */,
+				486A38482B6BAFCA00D777C5 /* PermissionsSwiftUISiri in Frameworks */,
+				486A38282B6BAFCA00D777C5 /* CorePermissionsSwiftUI in Frameworks */,
+				486A38302B6BAFCA00D777C5 /* PermissionsSwiftUICalendar in Frameworks */,
+				486A38602B6BB00800D777C5 /* PermissionsSwiftUIMicrophone in Frameworks */,
+				486A382E2B6BAFCA00D777C5 /* PermissionsSwiftUIBluetooth in Frameworks */,
+				486A383E2B6BAFCA00D777C5 /* PermissionsSwiftUIMotion in Frameworks */,
+				486A38522B6BB00800D777C5 /* PermissionsSwiftUIBluetooth in Frameworks */,
+				486A38502B6BB00800D777C5 /* PermissionsSwiftUIBiometrics in Frameworks */,
+				486A38382B6BAFCA00D777C5 /* PermissionsSwiftUILocation in Frameworks */,
+				486A382A2B6BAFCA00D777C5 /* PermissionsSwiftUI in Frameworks */,
+				486A38542B6BB00800D777C5 /* PermissionsSwiftUICalendar in Frameworks */,
 				4873973B2B13345200758D3A /* SWXMLHash in Frameworks */,
+				486A38342B6BAFCA00D777C5 /* PermissionsSwiftUIContacts in Frameworks */,
 				487397382B132F0400758D3A /* Alamofire in Frameworks */,
+				486A38582B6BB00800D777C5 /* PermissionsSwiftUIContacts in Frameworks */,
+				486A383C2B6BAFCA00D777C5 /* PermissionsSwiftUIMicrophone in Frameworks */,
+				486A38422B6BAFCA00D777C5 /* PermissionsSwiftUINotification in Frameworks */,
+				486A384E2B6BB00800D777C5 /* PermissionsSwiftUI in Frameworks */,
+				486A38732B6BB4DF00D777C5 /* Locations in Frameworks */,
+				486A38622B6BB00800D777C5 /* PermissionsSwiftUIMotion in Frameworks */,
+				486A384C2B6BB00800D777C5 /* CorePermissionsSwiftUI in Frameworks */,
+				486A385A2B6BB00800D777C5 /* PermissionsSwiftUIHealth in Frameworks */,
+				486A385E2B6BB00800D777C5 /* PermissionsSwiftUILocationAlways in Frameworks */,
+				486A38562B6BB00800D777C5 /* PermissionsSwiftUICamera in Frameworks */,
+				486A38702B6BB00800D777C5 /* PermissionsSwiftUITracking in Frameworks */,
+				486A383A2B6BAFCA00D777C5 /* PermissionsSwiftUILocationAlways in Frameworks */,
+				486A38682B6BB00800D777C5 /* PermissionsSwiftUIPhoto in Frameworks */,
+				486A38362B6BAFCA00D777C5 /* PermissionsSwiftUIHealth in Frameworks */,
+				486A386E2B6BB00800D777C5 /* PermissionsSwiftUISpeech in Frameworks */,
+				486A38402B6BAFCA00D777C5 /* PermissionsSwiftUIMusic in Frameworks */,
+				486A38462B6BAFCA00D777C5 /* PermissionsSwiftUIReminder in Frameworks */,
+				486A38662B6BB00800D777C5 /* PermissionsSwiftUINotification in Frameworks */,
+				486A384A2B6BAFCA00D777C5 /* PermissionsSwiftUISpeech in Frameworks */,
+				486A385C2B6BB00800D777C5 /* PermissionsSwiftUILocation in Frameworks */,
+				486A386C2B6BB00800D777C5 /* PermissionsSwiftUISiri in Frameworks */,
+				486A38642B6BB00800D777C5 /* PermissionsSwiftUIMusic in Frameworks */,
+				486A386A2B6BB00800D777C5 /* PermissionsSwiftUIReminder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +167,7 @@
 		484C8D8E2B00B7DD007C21E6 /* ISSFlyby */ = {
 			isa = PBXGroup;
 			children = (
+				488EA34A2B72223000D8D881 /* Methods */,
 				487397432B136D9C00758D3A /* Info.plist */,
 				487397422B136BBC00758D3A /* API */,
 				487397412B136B9500758D3A /* Views */,
@@ -138,6 +219,15 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		488EA34A2B72223000D8D881 /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				488EA3482B72163A00D8D881 /* LocationManager.swift */,
+				488EA34B2B72228200D8D881 /* PlaceNameManager.swift */,
+			);
+			path = Methods;
+			sourceTree = "<group>";
+		};
 		48D2C1452B0F5262000530A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +257,44 @@
 			packageProductDependencies = (
 				487397372B132F0400758D3A /* Alamofire */,
 				4873973A2B13345200758D3A /* SWXMLHash */,
+				486A38272B6BAFCA00D777C5 /* CorePermissionsSwiftUI */,
+				486A38292B6BAFCA00D777C5 /* PermissionsSwiftUI */,
+				486A382B2B6BAFCA00D777C5 /* PermissionsSwiftUIBiometrics */,
+				486A382D2B6BAFCA00D777C5 /* PermissionsSwiftUIBluetooth */,
+				486A382F2B6BAFCA00D777C5 /* PermissionsSwiftUICalendar */,
+				486A38312B6BAFCA00D777C5 /* PermissionsSwiftUICamera */,
+				486A38332B6BAFCA00D777C5 /* PermissionsSwiftUIContacts */,
+				486A38352B6BAFCA00D777C5 /* PermissionsSwiftUIHealth */,
+				486A38372B6BAFCA00D777C5 /* PermissionsSwiftUILocation */,
+				486A38392B6BAFCA00D777C5 /* PermissionsSwiftUILocationAlways */,
+				486A383B2B6BAFCA00D777C5 /* PermissionsSwiftUIMicrophone */,
+				486A383D2B6BAFCA00D777C5 /* PermissionsSwiftUIMotion */,
+				486A383F2B6BAFCA00D777C5 /* PermissionsSwiftUIMusic */,
+				486A38412B6BAFCA00D777C5 /* PermissionsSwiftUINotification */,
+				486A38432B6BAFCA00D777C5 /* PermissionsSwiftUIPhoto */,
+				486A38452B6BAFCA00D777C5 /* PermissionsSwiftUIReminder */,
+				486A38472B6BAFCA00D777C5 /* PermissionsSwiftUISiri */,
+				486A38492B6BAFCA00D777C5 /* PermissionsSwiftUISpeech */,
+				486A384B2B6BB00800D777C5 /* CorePermissionsSwiftUI */,
+				486A384D2B6BB00800D777C5 /* PermissionsSwiftUI */,
+				486A384F2B6BB00800D777C5 /* PermissionsSwiftUIBiometrics */,
+				486A38512B6BB00800D777C5 /* PermissionsSwiftUIBluetooth */,
+				486A38532B6BB00800D777C5 /* PermissionsSwiftUICalendar */,
+				486A38552B6BB00800D777C5 /* PermissionsSwiftUICamera */,
+				486A38572B6BB00800D777C5 /* PermissionsSwiftUIContacts */,
+				486A38592B6BB00800D777C5 /* PermissionsSwiftUIHealth */,
+				486A385B2B6BB00800D777C5 /* PermissionsSwiftUILocation */,
+				486A385D2B6BB00800D777C5 /* PermissionsSwiftUILocationAlways */,
+				486A385F2B6BB00800D777C5 /* PermissionsSwiftUIMicrophone */,
+				486A38612B6BB00800D777C5 /* PermissionsSwiftUIMotion */,
+				486A38632B6BB00800D777C5 /* PermissionsSwiftUIMusic */,
+				486A38652B6BB00800D777C5 /* PermissionsSwiftUINotification */,
+				486A38672B6BB00800D777C5 /* PermissionsSwiftUIPhoto */,
+				486A38692B6BB00800D777C5 /* PermissionsSwiftUIReminder */,
+				486A386B2B6BB00800D777C5 /* PermissionsSwiftUISiri */,
+				486A386D2B6BB00800D777C5 /* PermissionsSwiftUISpeech */,
+				486A386F2B6BB00800D777C5 /* PermissionsSwiftUITracking */,
+				486A38722B6BB4DF00D777C5 /* Locations */,
 			);
 			productName = ISSFlyby;
 			productReference = 484C8D8C2B00B7DD007C21E6 /* ISSFlyby.app */;
@@ -199,6 +327,8 @@
 			packageReferences = (
 				487397362B132F0400758D3A /* XCRemoteSwiftPackageReference "Alamofire" */,
 				487397392B13345200758D3A /* XCRemoteSwiftPackageReference "SWXMLHash" */,
+				486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */,
+				486A38712B6BB4DF00D777C5 /* XCRemoteSwiftPackageReference "swift-locations" */,
 			);
 			productRefGroup = 484C8D8D2B00B7DD007C21E6 /* Products */;
 			projectDirPath = "";
@@ -236,6 +366,8 @@
 				4811572E2B00D682004BA14A /* LocationRow.swift in Sources */,
 				4873973D2B13363A00758D3A /* GetFlybyData.swift in Sources */,
 				484C8D902B00B7DD007C21E6 /* ISSFlybyApp.swift in Sources */,
+				488EA3492B72163A00D8D881 /* LocationManager.swift in Sources */,
+				488EA34C2B72228200D8D881 /* PlaceNameManager.swift in Sources */,
 				487397452B136E0800758D3A /* ItemRow.swift in Sources */,
 				484C8D9F2B00B87A007C21E6 /* LocationPicker.swift in Sources */,
 				48D2C1472B0F527C000530A1 /* Marker.swift in Sources */,
@@ -454,6 +586,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jevonmao/PermissionsSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.9;
+			};
+		};
+		486A38712B6BB4DF00D777C5 /* XCRemoteSwiftPackageReference "swift-locations" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexandrehsaad/swift-locations.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		487397362B132F0400758D3A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -473,6 +621,196 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		486A38272B6BAFCA00D777C5 /* CorePermissionsSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = CorePermissionsSwiftUI;
+		};
+		486A38292B6BAFCA00D777C5 /* PermissionsSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUI;
+		};
+		486A382B2B6BAFCA00D777C5 /* PermissionsSwiftUIBiometrics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIBiometrics;
+		};
+		486A382D2B6BAFCA00D777C5 /* PermissionsSwiftUIBluetooth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIBluetooth;
+		};
+		486A382F2B6BAFCA00D777C5 /* PermissionsSwiftUICalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUICalendar;
+		};
+		486A38312B6BAFCA00D777C5 /* PermissionsSwiftUICamera */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUICamera;
+		};
+		486A38332B6BAFCA00D777C5 /* PermissionsSwiftUIContacts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIContacts;
+		};
+		486A38352B6BAFCA00D777C5 /* PermissionsSwiftUIHealth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIHealth;
+		};
+		486A38372B6BAFCA00D777C5 /* PermissionsSwiftUILocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUILocation;
+		};
+		486A38392B6BAFCA00D777C5 /* PermissionsSwiftUILocationAlways */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUILocationAlways;
+		};
+		486A383B2B6BAFCA00D777C5 /* PermissionsSwiftUIMicrophone */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIMicrophone;
+		};
+		486A383D2B6BAFCA00D777C5 /* PermissionsSwiftUIMotion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIMotion;
+		};
+		486A383F2B6BAFCA00D777C5 /* PermissionsSwiftUIMusic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIMusic;
+		};
+		486A38412B6BAFCA00D777C5 /* PermissionsSwiftUINotification */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUINotification;
+		};
+		486A38432B6BAFCA00D777C5 /* PermissionsSwiftUIPhoto */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIPhoto;
+		};
+		486A38452B6BAFCA00D777C5 /* PermissionsSwiftUIReminder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIReminder;
+		};
+		486A38472B6BAFCA00D777C5 /* PermissionsSwiftUISiri */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUISiri;
+		};
+		486A38492B6BAFCA00D777C5 /* PermissionsSwiftUISpeech */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUISpeech;
+		};
+		486A384B2B6BB00800D777C5 /* CorePermissionsSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = CorePermissionsSwiftUI;
+		};
+		486A384D2B6BB00800D777C5 /* PermissionsSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUI;
+		};
+		486A384F2B6BB00800D777C5 /* PermissionsSwiftUIBiometrics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIBiometrics;
+		};
+		486A38512B6BB00800D777C5 /* PermissionsSwiftUIBluetooth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIBluetooth;
+		};
+		486A38532B6BB00800D777C5 /* PermissionsSwiftUICalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUICalendar;
+		};
+		486A38552B6BB00800D777C5 /* PermissionsSwiftUICamera */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUICamera;
+		};
+		486A38572B6BB00800D777C5 /* PermissionsSwiftUIContacts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIContacts;
+		};
+		486A38592B6BB00800D777C5 /* PermissionsSwiftUIHealth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIHealth;
+		};
+		486A385B2B6BB00800D777C5 /* PermissionsSwiftUILocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUILocation;
+		};
+		486A385D2B6BB00800D777C5 /* PermissionsSwiftUILocationAlways */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUILocationAlways;
+		};
+		486A385F2B6BB00800D777C5 /* PermissionsSwiftUIMicrophone */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIMicrophone;
+		};
+		486A38612B6BB00800D777C5 /* PermissionsSwiftUIMotion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIMotion;
+		};
+		486A38632B6BB00800D777C5 /* PermissionsSwiftUIMusic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIMusic;
+		};
+		486A38652B6BB00800D777C5 /* PermissionsSwiftUINotification */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUINotification;
+		};
+		486A38672B6BB00800D777C5 /* PermissionsSwiftUIPhoto */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIPhoto;
+		};
+		486A38692B6BB00800D777C5 /* PermissionsSwiftUIReminder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIReminder;
+		};
+		486A386B2B6BB00800D777C5 /* PermissionsSwiftUISiri */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUISiri;
+		};
+		486A386D2B6BB00800D777C5 /* PermissionsSwiftUISpeech */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUISpeech;
+		};
+		486A386F2B6BB00800D777C5 /* PermissionsSwiftUITracking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUITracking;
+		};
+		486A38722B6BB4DF00D777C5 /* Locations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A38712B6BB4DF00D777C5 /* XCRemoteSwiftPackageReference "swift-locations" */;
+			productName = Locations;
+		};
 		487397372B132F0400758D3A /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 487397362B132F0400758D3A /* XCRemoteSwiftPackageReference "Alamofire" */;
