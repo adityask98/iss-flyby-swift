@@ -10,6 +10,7 @@
 		4811572C2B00BEA7004BA14A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4811572B2B00BEA7004BA14A /* Colors.xcassets */; };
 		4811572E2B00D682004BA14A /* LocationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811572D2B00D682004BA14A /* LocationRow.swift */; };
 		481157312B00DB08004BA14A /* markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 481157302B00DB08004BA14A /* markers.json */; };
+		4830B5252B81EBE2008ABD47 /* CalendarEventParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4830B5242B81EBE2008ABD47 /* CalendarEventParser.swift */; };
 		484C8D902B00B7DD007C21E6 /* ISSFlybyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C8D8F2B00B7DD007C21E6 /* ISSFlybyApp.swift */; };
 		484C8D922B00B7DD007C21E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C8D912B00B7DD007C21E6 /* ContentView.swift */; };
 		484C8D942B00B7DE007C21E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484C8D932B00B7DE007C21E6 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		4811572B2B00BEA7004BA14A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		4811572D2B00D682004BA14A /* LocationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRow.swift; sourceTree = "<group>"; };
 		481157302B00DB08004BA14A /* markers.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = markers.json; sourceTree = "<group>"; };
+		4830B5242B81EBE2008ABD47 /* CalendarEventParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventParser.swift; sourceTree = "<group>"; };
 		484C8D8C2B00B7DD007C21E6 /* ISSFlyby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISSFlyby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		484C8D8F2B00B7DD007C21E6 /* ISSFlybyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSFlybyApp.swift; sourceTree = "<group>"; };
 		484C8D912B00B7DD007C21E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			children = (
 				488EA3482B72163A00D8D881 /* LocationManager.swift */,
 				488EA34B2B72228200D8D881 /* PlaceNameManager.swift */,
+				4830B5242B81EBE2008ABD47 /* CalendarEventParser.swift */,
 			);
 			path = Methods;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				487397352B1314AA00758D3A /* LocationDetail.swift in Sources */,
 				4811572E2B00D682004BA14A /* LocationRow.swift in Sources */,
 				4873973D2B13363A00758D3A /* GetFlybyData.swift in Sources */,
+				4830B5252B81EBE2008ABD47 /* CalendarEventParser.swift in Sources */,
 				484C8D902B00B7DD007C21E6 /* ISSFlybyApp.swift in Sources */,
 				488EA3492B72163A00D8D881 /* LocationManager.swift in Sources */,
 				488EA34C2B72228200D8D881 /* PlaceNameManager.swift in Sources */,

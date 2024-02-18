@@ -35,7 +35,7 @@ struct LocationDetail: View {
 //            }
             if !flybyData.fetchedItems.isEmpty {
                 List(flybyData.fetchedItems, id: \.self) { item in
-                    ItemRow(date: item.description.date, time: item.description.time, duration: item.description.duration)
+                    ItemRow(date: item.description.date, time: item.description.time, duration: item.description.duration, data: item)
                         .listRowBackground(Color("darkPrimaryColor"))
                 }
                

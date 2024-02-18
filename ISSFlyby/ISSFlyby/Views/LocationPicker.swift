@@ -117,7 +117,7 @@ struct LocationPicker: View {
                         .onTapGesture {
                             showModal = true
                         }
-                        .JMModal(showModal: $showModal, for: [.location], autoCheckAuthorization: false)
+                        .JMModal(showModal: $showModal, for: [.location, .calenderWrite, .remindersFull], autoCheckAuthorization: false)
                 }
                 .padding()
                 Spacer()
