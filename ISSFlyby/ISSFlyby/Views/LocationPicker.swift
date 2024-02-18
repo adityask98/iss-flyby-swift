@@ -30,18 +30,31 @@ struct LocationPicker: View {
     }
     @StateObject var placeNameManager = PlaceNameManager()
     @State var showModal = false
-    func getLocation() async {
-        let locator: Locater = .init(accuracy: .tenMetres)
-        do {
-            let stream: AsyncStream<CLLocation> = try locator.subscribe()
-            for await data in stream {
-                print(data)
-            }
-        } catch let error {
-            print(error)
+    func setAlertContent(title: String, message: String) {
+        alertTitle = title
+        alertMessage = message
+    }
+    
+    func handleLocationAlert() {
+        if (locationOnOrOff()){
+            setAlertContent(title: "Location Status", message: "Location Permission looks okay!")
+        } else {
+            setAlertContent(title: "Something went wrong", message: "Please check location permissions")
         }
+    
     }
         
+    func locationOnOrOff() ->  Bool {
+        let locationStatus = locationManager.locationStatus
+        switch locationStatus {
+        case .authorizedAlways, .authorizedWhenInUse:
+            return true
+        case .notDetermined, .denied, .restricted, .none:
+            return false
+        case .some(_):
+            return false
+        }
+    }
     
     
     var filteredLocations: [Marker] {
@@ -75,51 +88,36 @@ struct LocationPicker: View {
                     Image(systemName: "location")
                         .foregroundColor(.white)
                         .onTapGesture {
-                           //showModal=true
                             Task {
                                 print(userLatitude)
-                                //print(locationManager.$lastPlacemarkerName)
-                                placeNameManager.getPlaceName(coordinates: locationManager.lastLocation!) { placeName in
-                                    if let placeName = placeName {
-                                        print("Insisde View", placeName)
-                                        searchText = placeName
-                                    } else {
-                                        print("Failed to retireve inside view")
+                               handleLocationAlert()
+                                if (locationOnOrOff()) {
+                                    placeNameManager.getPlaceName(coordinates: locationManager.lastLocation!) { placeName in
+                                        if let placeName = placeName {
+                                            searchText = placeName
+                                        } else {
+                                            print("Failed to retireve inside view")
+                                        }
                                     }
+                                } else {
+                                    showingAlert.toggle()
                                 }
                                 
                             }
 
-                        }.JMModal(showModal: $showModal, for: [.location])
-                    
-                    Image(systemName: "location")
-                        .onTapGesture {
-                            print(locationManager.statusString)
-                            showingAlert.toggle()
-                            let locationStatus = locationManager.locationStatus
-                            switch locationStatus {
-                            case .authorizedWhenInUse:
-                                alertTitle = "Auth When in Use"
-                                alertMessage = "Auth when in use"
-                            case .none:
-                                print("none")
-                            case .some(.notDetermined):
-                                alertTitle = "Location is not determined"
-                                
-                            case .some(.restricted):
-                                print("resutricted")
-                            case .some(.denied):
-                                print("denied")
-                            case .some(.authorizedAlways):
-                                print("authalways")
-                            case .some(_):
-                                print("unknows")
-                            }
-                        } .alert(alertTitle, isPresented: $showingAlert) {
+                        }
+                        .alert(alertTitle, isPresented: $showingAlert) {
                             Button("OK"){ }
                         } message: {
                             Text(alertMessage)
                         }
+                    
+                    Image(systemName: "info.circle")
+                        .foregroundStyle(.white)
+                        .onTapGesture {
+                            showModal = true
+                        }
+                        .JMModal(showModal: $showModal, for: [.location], autoCheckAuthorization: false)
                 }
                 .padding()
                 Spacer()
