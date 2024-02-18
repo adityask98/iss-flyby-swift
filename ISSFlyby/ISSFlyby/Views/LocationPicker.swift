@@ -14,42 +14,12 @@ extension Color {
     static let primaryColor = Color("")
 }
 
-//class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
-//    let locationManager = CLLocationManager()
-//    @Published var location: CLLocationCoordinate2D?
-//    override init() {
-//        super.init()
-//        locationManager.delegate = self
-//        locationManager.requestAlwaysAuthorization()
-//    }
-//    func requestLocation(_ manager: CLLocationManager) {
-////        switch CLLocationManager.authorizationStatus() {
-////        case .notDetermined, .denied, .restricted:
-////            print("No access :(")
-////        case .authorizedAlways:
-////            print("ALWAYS")
-////        case .authorizedWhenInUse:
-////         print ("WHEN IN USE")
-////        @unknown default:
-////            print(">???")
-////        }
-//        //manager.requestWhenInUseAuthorization()
-//        
-//        //manager.requestLocation()
-//        //locationManagerDidChangeAuthorization(locationManager)
-//        let accuracyAuthorization = manager.accuracyAuthorization
-//        if accuracyAuthorization == CLAccuracyAuthorization.reducedAccuracy {
-//            print("REDUCED ACCURACY");
-//        }
-//        else if accuracyAuthorization ==  CLAccuracyAuthorization.fullAccuracy {
-//            print("FULL ACCURACY");
-//        }
-//    }
-//}
-
 struct LocationPicker: View {
     @EnvironmentObject var locationData: MarkerData
     @State private var searchText: String = ""
+    @State private var showingAlert = false
+    @State private var alertTitle = ""
+    @State private var alertMessage = ""
     
     @StateObject var locationManager = LocationManager()
     var userLatitude: String {
@@ -125,7 +95,31 @@ struct LocationPicker: View {
                     Image(systemName: "location")
                         .onTapGesture {
                             print(locationManager.statusString)
-                        } .JMAlert(showModal: $showModal, for: [.location])
+                            showingAlert.toggle()
+                            let locationStatus = locationManager.locationStatus
+                            switch locationStatus {
+                            case .authorizedWhenInUse:
+                                alertTitle = "Auth When in Use"
+                                alertMessage = "Auth when in use"
+                            case .none:
+                                print("none")
+                            case .some(.notDetermined):
+                                alertTitle = "Location is not determined"
+                                
+                            case .some(.restricted):
+                                print("resutricted")
+                            case .some(.denied):
+                                print("denied")
+                            case .some(.authorizedAlways):
+                                print("authalways")
+                            case .some(_):
+                                print("unknows")
+                            }
+                        } .alert(alertTitle, isPresented: $showingAlert) {
+                            Button("OK"){ }
+                        } message: {
+                            Text(alertMessage)
+                        }
                 }
                 .padding()
                 Spacer()
