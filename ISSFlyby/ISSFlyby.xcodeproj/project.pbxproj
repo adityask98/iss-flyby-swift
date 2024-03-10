@@ -10,6 +10,7 @@
 		4811572C2B00BEA7004BA14A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4811572B2B00BEA7004BA14A /* Colors.xcassets */; };
 		4811572E2B00D682004BA14A /* LocationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811572D2B00D682004BA14A /* LocationRow.swift */; };
 		481157312B00DB08004BA14A /* markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 481157302B00DB08004BA14A /* markers.json */; };
+		48267B312B9D92B300CDD038 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 48267B302B9D92B300CDD038 /* AlertToast */; };
 		4830B5252B81EBE2008ABD47 /* CalendarEventParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4830B5242B81EBE2008ABD47 /* CalendarEventParser.swift */; };
 		484C8D902B00B7DD007C21E6 /* ISSFlybyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C8D8F2B00B7DD007C21E6 /* ISSFlybyApp.swift */; };
 		484C8D922B00B7DD007C21E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C8D912B00B7DD007C21E6 /* ContentView.swift */; };
@@ -128,6 +129,7 @@
 				486A38682B6BB00800D777C5 /* PermissionsSwiftUIPhoto in Frameworks */,
 				486A38362B6BAFCA00D777C5 /* PermissionsSwiftUIHealth in Frameworks */,
 				486A386E2B6BB00800D777C5 /* PermissionsSwiftUISpeech in Frameworks */,
+				48267B312B9D92B300CDD038 /* AlertToast in Frameworks */,
 				486A38402B6BAFCA00D777C5 /* PermissionsSwiftUIMusic in Frameworks */,
 				486A38462B6BAFCA00D777C5 /* PermissionsSwiftUIReminder in Frameworks */,
 				486A38662B6BB00800D777C5 /* PermissionsSwiftUINotification in Frameworks */,
@@ -298,6 +300,7 @@
 				486A386D2B6BB00800D777C5 /* PermissionsSwiftUISpeech */,
 				486A386F2B6BB00800D777C5 /* PermissionsSwiftUITracking */,
 				486A38722B6BB4DF00D777C5 /* Locations */,
+				48267B302B9D92B300CDD038 /* AlertToast */,
 			);
 			productName = ISSFlyby;
 			productReference = 484C8D8C2B00B7DD007C21E6 /* ISSFlyby.app */;
@@ -332,6 +335,7 @@
 				487397392B13345200758D3A /* XCRemoteSwiftPackageReference "SWXMLHash" */,
 				486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */,
 				486A38712B6BB4DF00D777C5 /* XCRemoteSwiftPackageReference "swift-locations" */,
+				48267B2F2B9D92B300CDD038 /* XCRemoteSwiftPackageReference "AlertToast" */,
 			);
 			productRefGroup = 484C8D8D2B00B7DD007C21E6 /* Products */;
 			projectDirPath = "";
@@ -592,6 +596,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		48267B2F2B9D92B300CDD038 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.9;
+			};
+		};
 		486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jevonmao/PermissionsSwiftUI";
@@ -627,6 +639,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		48267B302B9D92B300CDD038 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48267B2F2B9D92B300CDD038 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
 		486A38272B6BAFCA00D777C5 /* CorePermissionsSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 486A38262B6BAFCA00D777C5 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;

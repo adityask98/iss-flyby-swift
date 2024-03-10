@@ -7,31 +7,34 @@
 
 import Foundation
 import EventKit
+import AlertToast
 
 struct CalendarEventParser {
-    static func parseandCreateCalendarEvent(data: String) {
-        let lines = data.components(separatedBy: "\n")
+    static func parseandCreateCalendarEvent(data: Item, date: String, time: String) {
+        print("TIME STRING", time)
+        print("DATE STRING", date)
+        //let lines = data.components(separatedBy: "\n")
         
-        var dateString: String?
-        var timeString: String?
+        var dateString = data.description.date
+        var timeString = data.description.time
         
-        for line in lines {
-            let components = line.components(separatedBy: ": ")
-            let key = components[0].trimmingCharacters(in: .whitespacesAndNewlines)
-            let value = components[1].trimmingCharacters(in: .whitespacesAndNewlines)
-            switch key {
-            case "Date":
-                dateString = value
-            case "Time":
-                timeString = value
-            default:
-                break
-            }
-        }
-        guard let dateString = dateString, let timeString = timeString else {
-            print("Error, failed to parse.")
-            return
-        }
+//        for line in lines {
+//            let components = line.components(separatedBy: ": ")
+//            let key = components[0].trimmingCharacters(in: .whitespacesAndNewlines)
+//            let value = components[1].trimmingCharacters(in: .whitespacesAndNewlines)
+//            switch key {
+//            case "Date":
+//                dateString = value
+//            case "Time":
+//                timeString = value
+//            default:
+//                break
+//            }
+//        }
+//        guard let dateString = dateString, let timeString = timeString else {
+//            print("Error, failed to parse.")
+//            return
+//        }
         
         let formatter = DateFormatter()
         formatter.dateFormat = "EEEE MMM d, yyyy"
@@ -59,7 +62,7 @@ struct CalendarEventParser {
         event.startDate = startDate
         event.endDate = startDate
         let reminder: EKReminder = EKReminder(eventStore: store)
-        reminder.title = "ISSFlyBy"
+        reminder.title = data.title
         reminder.notes = "This is a note"
         reminder.calendar = store.defaultCalendarForNewReminders()
         do {
@@ -68,6 +71,7 @@ struct CalendarEventParser {
             print("Error saving reminder")
             return
         }
+        AlertToast(displayMode: .hud, type: .regular, title: "Success")
         print("Reminder saved successfully")
         return
         
