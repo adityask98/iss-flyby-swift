@@ -18,24 +18,6 @@ struct CalendarEventParser {
     var dateString = data.description.date
     var timeString = data.description.time
 
-    //        for line in lines {
-    //            let components = line.components(separatedBy: ": ")
-    //            let key = components[0].trimmingCharacters(in: .whitespacesAndNewlines)
-    //            let value = components[1].trimmingCharacters(in: .whitespacesAndNewlines)
-    //            switch key {
-    //            case "Date":
-    //                dateString = value
-    //            case "Time":
-    //                timeString = value
-    //            default:
-    //                break
-    //            }
-    //        }
-    //        guard let dateString = dateString, let timeString = timeString else {
-    //            print("Error, failed to parse.")
-    //            return
-    //        }
-
     let dateTimeString = "\(dateString) \(timeString)"
     print(dateTimeString)
     let formatter = DateFormatter()
