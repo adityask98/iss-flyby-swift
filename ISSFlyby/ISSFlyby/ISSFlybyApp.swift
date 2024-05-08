@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct ISSFlybyApp: App {
-    var body: some Scene {
-        WindowGroup {
-            LocationPicker().environmentObject(MarkerData())
-        }
+  var body: some Scene {
+    WindowGroup {
+      LocationPicker().environmentObject(MarkerData())
     }
+  }
 }
