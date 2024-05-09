@@ -10,9 +10,12 @@ import EventKit
 import Foundation
 
 struct CalendarEventParser {
-  static func parseandCreateCalendarEvent(data: Item, date: String, time: String) {
+  static func parseandCreateCalendarEvent(
+    data: Item, date: String, time: String, locationData: Marker
+  ) {
     print("TIME STRING", time)
     print("DATE STRING", date)
+    print("DATA: ", data)
     //let lines = data.components(separatedBy: "\n")
 
     var dateString = data.description.date
@@ -44,13 +47,15 @@ struct CalendarEventParser {
 
     let store = EKEventStore()
     let event = EKEvent(eventStore: store)
-    event.title = "ISSFlyby"
+    event.title =
+      "ISSFlyby at \(locationData.name) for \(data.description.duration), approaching \(data.description.approach)."
     event.startDate = startDate
     event.endDate = startDate
     let reminder: EKReminder = EKReminder(eventStore: store)
     reminder.title = data.title
 
-    reminder.notes = "This is a note"
+    reminder.notes =
+      "ISSFlyby at \(locationData.name.trimmingCharacters(in: .whitespacesAndNewlines)) for \(data.description.duration.trimmingCharacters(in: .whitespacesAndNewlines)), approaching \(data.description.approach.trimmingCharacters(in: .whitespacesAndNewlines))."
     var tempDateComp = DateComponents()
     tempDateComp.year = calendar.component(.year, from: date)
     tempDateComp.month = calendar.component(.month, from: date)

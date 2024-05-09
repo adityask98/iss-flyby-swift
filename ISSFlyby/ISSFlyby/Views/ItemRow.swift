@@ -11,6 +11,7 @@ import SwiftUI
 struct ItemRow: View {
   var date, time, duration: String
   var data: Item
+  var locationData: Marker
   @Binding var showSuccessToast: Bool
 
   @State private var expanded = false
@@ -50,7 +51,8 @@ struct ItemRow: View {
             Button(
               "Add",
               action: {
-                CalendarEventParser.parseandCreateCalendarEvent(data: data, date: date, time: time)
+                CalendarEventParser.parseandCreateCalendarEvent(
+                  data: data, date: date, time: time, locationData: locationData)
                 showSuccessToast.toggle()
               })
             Button("Cancel", action: { showConfirmAlert.toggle() })

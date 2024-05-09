@@ -35,7 +35,8 @@ struct LocationDetail: View {
         List(flybyData.fetchedItems, id: \.self) { item in
           ItemRow(
             date: item.description.date, time: item.description.time,
-            duration: item.description.duration, data: item, showSuccessToast: $showSuccessToast
+            duration: item.description.duration, data: item, locationData: location,
+            showSuccessToast: $showSuccessToast
           )
           .listRowBackground(Color("darkPrimaryColor"))
         }
