@@ -64,6 +64,7 @@ struct CalendarEventParser {
     tempDateComp.minute = components.minute
     reminder.dueDateComponents = tempDateComp
     reminder.calendar = store.defaultCalendarForNewReminders()
+      
     do {
       try store.save(reminder, commit: true)
     } catch {

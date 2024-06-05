@@ -12,6 +12,7 @@ import SwiftUI
 struct LocationDetail: View {
   @EnvironmentObject var locationData: MarkerData
   @ObservedObject private var flybyData = GetFlybyData()
+  @State private var isDataFetched = false
   @State private var showSuccessToast = false
   var location: Marker
 
@@ -40,11 +41,6 @@ struct LocationDetail: View {
           )
           .listRowBackground(Color("darkPrimaryColor"))
         }
-        .toast(isPresenting: $showSuccessToast) {
-          AlertToast(
-            displayMode: .alert, type: .complete(Color("successGreen")), title: "SUCCESS",
-            subTitle: "Reminder Successfully saved")
-        }
 
         .listStyle(.plain)
 
@@ -54,14 +50,23 @@ struct LocationDetail: View {
         Spacer()
       }
     }
+    .toast(isPresenting: $showSuccessToast) {
+      AlertToast(
+        displayMode: .alert, type: .complete(Color("successGreen")), title: "SUCCESS",
+        subTitle: "Reminder Successfully saved")
+    }
     .onAppear {
-      region = Binding.constant(
-        MKCoordinateRegion(
-          center: .init(latitude: location.latitude, longitude: location.longitude),
-          span: .init(latitudeDelta: 0.2, longitudeDelta: 0.2)))
-      flybyData.fetchData(
-        country: location.country, region: location.additional_info, city: location.city_identifier)
-      UIApplication.shared.windows.first?.rootViewController?.overrideUserInterfaceStyle = .dark
+      if !isDataFetched {
+        region = Binding.constant(
+          MKCoordinateRegion(
+            center: .init(latitude: location.latitude, longitude: location.longitude),
+            span: .init(latitudeDelta: 0.2, longitudeDelta: 0.2)))
+        flybyData.fetchData(
+          country: location.country, region: location.additional_info,
+          city: location.city_identifier)
+        UIApplication.shared.windows.first?.rootViewController?.overrideUserInterfaceStyle = .dark
+        isDataFetched = true
+      }
     }
 
     .navigationTitle(location.name)
